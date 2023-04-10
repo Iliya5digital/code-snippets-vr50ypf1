@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>DataManager code snippet</Title>
+      <Description>Этот сниппет добавляет заготовку конструктора класса контроллера</Description>
+      <Author>s.alekseev</Author>
+      <Shortcut>dms</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>WebApplication1.SecretNamespace</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>CName</ID>
+          <ToolTip>Название контроллера</ToolTip>
+          <Default>Home</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[private readonly DataManager dataManager;
+
+public $CName$Controller(DataManager dataManager)
+{
+    this.dataManager = dataManager;
+    $end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
